@@ -2,8 +2,7 @@
 
 A small, complete Todo app built to
 explore [Jetpack Navigation 3](https://developer.android.com/guide/navigation/navigation-3) — used
-as the companion project for the Medium article _"Jetpack Navigation 3: A Practical Guide to Deep
-Links and Beyond"_.
+as the companion project for the Medium article _"Jetpack Navigation 3: A Practical Guide"_.
 This project isn't meant to be a production-grade todo app. It's a focused sandbox for exercising
 Navigation 3's core APIs, deep linking, and adaptive list-detail layouts, with realistic (but
 intentionally minimal) supporting infrastructure like Room persistence and Hilt DI.
@@ -160,9 +159,8 @@ just different content in the same pane the detail view was already showing.
 
 ## Related Article
 
-This project accompanies a [Medium article](#) covering Navigation 3's core concepts, deep linking
-in
-depth, and adaptive list-detail layouts. _(Link to article pending)_
+This project accompanies a [Medium article](https://medium.com/@mobileatexxeta/jetpack-navigation-3-a-practical-guide-b6454869b568) covering Navigation 3's core concepts, deep linking
+in depth, and adaptive list-detail layouts.
 
 ## License
 
