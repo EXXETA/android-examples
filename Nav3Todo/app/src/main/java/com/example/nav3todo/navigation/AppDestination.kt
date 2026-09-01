@@ -10,6 +10,7 @@ import kotlinx.serialization.Transient
  */
 @Serializable
 sealed interface AppDestination : NavKey {
+    val parent: AppDestination? get() = null
 
     @Serializable
     data object TodoList : AppDestination
@@ -31,10 +32,5 @@ sealed interface AppDestination : NavKey {
  * Marks a destination as being reachable via a deep link, and therefore requiring
  * a synthetic back stack to support natural Back/Up navigation (see the
  * "Deep linking simulates manual navigation" principle).
- *
- * [parent] should be the screen the user would most likely have seen right before
- * this destination, had they navigated to it manually within the app.
  */
-interface DeepLinkDestination : AppDestination {
-    val parent: AppDestination
-}
+interface DeepLinkDestination : AppDestination
